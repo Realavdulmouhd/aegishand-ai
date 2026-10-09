@@ -1,0 +1,41 @@
+# Local Python environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.yaml
+
+# Personal data and generated runtime files
+data/
+models/
+logs/
+reports/
+recordings/
+captures/
+*.joblib
+*.pkl
+*.sqlite3
+*.db
+
+# Build and editor artifacts
+build/
+dist/
+*.spec
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
