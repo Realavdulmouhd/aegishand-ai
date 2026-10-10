@@ -1,0 +1,79 @@
+app:
+  name: "AegisHand AI"
+  version: "0.1.0"
+  environment: "development"
+
+runtime:
+  debug: true
+  safe_mode: true
+  require_control_permission: true
+
+camera:
+  index: 0
+  width: 1280
+  height: 720
+  fps_limit: 30
+
+tracking:
+  max_hands: 2
+  min_detection_confidence: 0.70
+  min_tracking_confidence: 0.70
+
+control:
+  enabled_on_startup: false
+  preferred_hand: "right"
+  smoothing_factor: 0.35
+  dead_zone_pixels: 8
+  edge_protection_pixels: 24
+  screen_width: 1920
+  screen_height: 1080
+  mirror_cursor: true
+
+system_control:
+  volume_step: 5
+  brightness_step: 8
+  allow_media_keys: true
+  allow_brightness_control: true
+  allow_security_lock: true
+
+drawing:
+  enabled: true
+  brush_radius: 6
+  min_draw_distance: 8
+  overlay_opacity: 0.85
+
+profiles:
+  default_profile: "default"
+  gestures_path: "config/gestures.yaml"
+
+diagnostics:
+  enabled: true
+  log_path: "logs/events.jsonl"
+  log_gestures: true
+  log_actions: true
+  log_mode_changes: true
+
+safety:
+  emergency_key: "esc"
+  action_cooldown_seconds: 0.45
+  dangerous_action_confirmation: true
+  pyautogui_failsafe: true
+  pause_on_no_hand: true
+
+logging:
+  level: "INFO"
+  file_enabled: true
+  file_path: "logs/aegishand.log"
+
+  data_collection:
+  enabled: true
+  dataset_path: "data/gesture_samples.csv"
+
+ml:
+  enabled: true
+  model_path: "models/gesture_model.joblib"
+  min_training_samples: 20
+
+dashboard:
+  enabled: true
+  launch_new_terminal: false

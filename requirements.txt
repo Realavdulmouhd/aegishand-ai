@@ -1,0 +1,12 @@
+PyYAML
+rich
+pytest
+numpy<2
+protobuf<5
+opencv-contrib-python==4.11.0.86
+mediapipe==0.10.21
+pyautogui
+screen-brightness-control
+scikit-learn
+joblib
+pyinstaller

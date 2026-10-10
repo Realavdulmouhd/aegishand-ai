@@ -1,0 +1,119 @@
+profiles:
+  default:
+    description: "Balanced profile for safe desktop control."
+    default_mode: "mouse"
+
+    modes:
+      mouse:
+        index_point: "move_cursor"
+        peace: "left_click"
+        three_fingers: "right_click"
+        pinch: "drag"
+        open_palm: "scroll"
+        fist: "pause_control"
+        two_hand_lock: "emergency_pause"
+
+      scroll:
+        open_palm: "scroll"
+        fist: "pause_control"
+        two_hand_lock: "emergency_pause"
+
+      media:
+        open_palm: "play_pause"
+        peace: "next_track"
+        three_fingers: "previous_track"
+        pinch: "mute"
+        fist: "pause_control"
+        two_hand_lock: "emergency_pause"
+
+      volume:
+        index_point: "volume_up"
+        peace: "volume_down"
+        pinch: "mute"
+        three_fingers: "brightness_up"
+        open_palm: "brightness_down"
+        fist: "pause_control"
+        two_hand_lock: "emergency_pause"
+
+      presentation:
+        open_palm: "presentation_start"
+        index_point: "presentation_next"
+        peace: "presentation_previous"
+        three_fingers: "presentation_blank"
+        pinch: "presentation_unblank"
+        fist: "pause_control"
+        two_hand_zoom_in: "presentation_zoom_in"
+        two_hand_zoom_out: "presentation_zoom_out"
+        two_hand_lock: "emergency_pause"
+
+      drawing:
+        index_point: "draw_air"
+        open_palm: "clear_canvas"
+        fist: "pause_control"
+        two_hand_lock: "clear_canvas"
+
+  media:
+    description: "Profile focused on music and video playback."
+    default_mode: "media"
+
+    modes:
+      media:
+        open_palm: "play_pause"
+        index_point: "volume_up"
+        peace: "volume_down"
+        three_fingers: "next_track"
+        pinch: "mute"
+        fist: "pause_control"
+        two_hand_lock: "emergency_pause"
+
+      volume:
+        index_point: "volume_up"
+        peace: "volume_down"
+        three_fingers: "brightness_up"
+        open_palm: "brightness_down"
+        pinch: "mute"
+        fist: "pause_control"
+        two_hand_lock: "emergency_pause"
+
+  accessibility:
+    description: "Reduced-complexity profile for safer hand-based navigation."
+    default_mode: "mouse"
+
+    modes:
+      mouse:
+        index_point: "move_cursor"
+        open_palm: "scroll"
+        fist: "pause_control"
+        two_hand_lock: "emergency_pause"
+
+      scroll:
+        open_palm: "scroll"
+        fist: "pause_control"
+        two_hand_lock: "emergency_pause"
+
+      drawing:
+        index_point: "draw_air"
+        open_palm: "clear_canvas"
+        fist: "pause_control"
+
+  developer:
+    description: "Demo profile for showing system architecture without aggressive control."
+    default_mode: "developer_demo"
+
+    modes:
+      developer_demo:
+        open_palm: "play_pause"
+        index_point: "move_cursor"
+        peace: "left_click"
+        fist: "pause_control"
+        two_hand_lock: "emergency_pause"
+
+      presentation:
+        index_point: "presentation_next"
+        peace: "presentation_previous"
+        fist: "pause_control"
+
+      drawing:
+        index_point: "draw_air"
+        open_palm: "clear_canvas"
+        fist: "pause_control"
